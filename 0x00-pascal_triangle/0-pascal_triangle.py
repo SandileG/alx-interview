@@ -1,26 +1,49 @@
 #!/usr/bin/python3
-
 def pascal_triangle(n):
     """
     Generate Pascal's Triangle up to the nth row.
-    Returns a list of lists of integers representing Pascal’s triangle of n.
+
+    Args:
+    n (int): The number of rows of Pascal's Triangle to generate.
+
+    Returns:
+    list of lists: A list of lists where each inner list represents a row of Pascal's Triangle.
+
+    Pascal's Triangle follows this structure:
+    - The first and last element of each row are 1.
+    - Each inner element of a row is the sum of the two elements directly above it.
+
+    Example:
+    For n = 5, the function returns:
+    [
+        [1],
+        [1, 1],
+        [1, 2, 1],
+        [1, 3, 3, 1],
+        [1, 4, 6, 4, 1]
+    ]
     """
+    
+    # Return an empty list if n <= 0
     if n <= 0:
         return []
     
-    # Initialize the triangle with the first row
+    # Initialize the triangle with the first row, which is always [1]
     triangle = [[1]]
     
     # Generate rows 2 to n
     for i in range(1, n):
-        # Start each row with a 1
+        # Start each new row with a 1
         row = [1]
-        # Each number (except the first and last) is the sum of the two numbers above it
+        
+        # Populate the row with sums of adjacent values from the previous row
         for j in range(1, i):
             row.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
+        
         # End each row with a 1
         row.append(1)
-        # Append the row to the triangle
+        
+        # Append the new row to the triangle
         triangle.append(row)
-
+    
     return triangle
