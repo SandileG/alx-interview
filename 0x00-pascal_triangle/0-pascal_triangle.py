@@ -7,11 +7,11 @@ def pascal_triangle(n):
     n (int): The number of rows of Pascal's Triangle to generate.
 
     Returns:
-    list of lists: list where each list represents a row of the Triangle.
+    list of lists: A list of lists
 
     Pascal's Triangle follows this structure:
     - The first and last element of each row are 1.
-    - Each element of a row is sum of two elements above it.
+    - Each inner element of a row is the sum of the two lists
 
     Example:
     For n = 5, the function returns:
