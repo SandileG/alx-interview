@@ -12,16 +12,6 @@ def pascal_triangle(n):
     Pascal's Triangle follows this structure:
     - The first and last element of each row are 1.
     - Each inner element of a row is the sum of the two lists
-
-    Example:
-    For n = 5, the function returns:
-    [
-        [1],
-        [1, 1],
-        [1, 2, 1],
-        [1, 3, 3, 1],
-        [1, 4, 6, 4, 1]
-    ]
     """
 
     # Return an empty list if n <= 0
