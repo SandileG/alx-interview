@@ -28,7 +28,7 @@ def canUnlockAll(boxes):
             opened_boxes.add(new_key)  # Mark the box as opened
             keys.update(boxes[new_key])  # Add the keys found in this new box
 
-    # If the number of opened boxes equals the total number of boxes, return True
+    # If number of opened boxes equals total number of boxes, return True
     return len(opened_boxes) == n
 
 # Test cases
