@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Solves lockboxes puzzle
+"""
+
+
 def canUnlockAll(boxes):
     """
     Determines if all boxes can be unlocked.
