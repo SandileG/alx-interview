@@ -1,5 +1,3 @@
----
-
 # Minimum Operations Project
 
 ## Project Overview
@@ -53,7 +51,3 @@ For more insights into the core concepts, consider exploring the following:
 - [Prime Factorization Tutorial (Khan Academy)](https://www.khanacademy.org/)
 - [Code Optimization in Python](https://docs.python.org/3/howto/optimizing.html)
 - [Greedy Algorithm Concepts (GeeksforGeeks)](https://www.geeksforgeeks.org/greedy-algorithms/)
-
-Happy coding, and enjoy exploring the Minimum Operations challenge!
-
----
