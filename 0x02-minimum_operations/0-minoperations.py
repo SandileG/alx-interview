@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Module for 0-minoperations
+"""
+
+
 def minOperations(n):
     if n < 2:
         return 0
