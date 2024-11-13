@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+UTF-8 Validation Module
+
+This module provides a function to check if a given dataset represents UTF-8.
+"""
+
 def validUTF8(data):
     num_bytes = 0  # Number of bytes in the current UTF-8 character
     
