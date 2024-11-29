@@ -3,6 +3,7 @@
 Solution to the coin change problem.
 """
 
+
 def makeChange(coins, total):
     """
     Determines the minimum number of coins needed to meet a given total.
@@ -12,7 +13,7 @@ def makeChange(coins, total):
         total (int): Target amount.
 
     Returns:
-        int: Fewest number of coins needed to meet total, or -1 if not possible.
+        int: Fewest coins needed to meet total, or -1.
     """
     if total <= 0:
         return 0
@@ -28,4 +29,3 @@ def makeChange(coins, total):
 
     # Return result
     return dp[total] if dp[total] != float('inf') else -1
-
